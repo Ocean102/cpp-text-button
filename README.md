@@ -16,6 +16,8 @@ g++ main.cpp -o application.exe
 ```
 
 ## Usage
+The usage is very easy, just import and the header and windows.h then use! I optimized it a lot so i could work properly
+
 ```cpp
 #include "buttons.h"
 #include <windows.h>
