@@ -24,16 +24,18 @@ The usage is very easy, just import and the header and windows.h then use! I opt
 #include <cstdlib>
 
 void onButtonClick() {
-  system("start cmd");
+    system("start cmd");
 }
 
 int main() {
+    // init button
+    Button openCmd = {2, 1, 20, "Open CMD"};
+
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
     system("chcp 65001 >nul");
     // style here if you want
     openCmd.rounded = true;
-    Button openCmd = {2, 1, 20, "Open CMD"};
 
     //put new button into a while(true) to loop instead of just working once
     newButton(openCmd, onButtonClick);
