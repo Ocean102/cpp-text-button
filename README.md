@@ -14,3 +14,27 @@ install MinGW from https://sourceforge.net/projects/mingw/ and link it to the en
 ```bash
 g++ main.cpp -o application.exe
 ```
+
+## Usage
+```cpp
+#include "buttons.h"
+#include <windows.h>
+#include <cstdlib>
+
+void onButtonClick() {
+  system("start cmd");
+}
+
+int main() {
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    system("chcp 65001 >nul");
+    // style here if you want
+    openCmd.rounded = true;
+    Button openCmd = {2, 1, 20, "Open CMD"};
+
+    //put new button into a while(true) to loop instead of just working once
+    newButton(openCmd, onButtonClick);
+    return 0;
+}
+```
