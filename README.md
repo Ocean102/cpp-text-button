@@ -14,7 +14,3 @@ install MinGW from https://sourceforge.net/projects/mingw/ and link it to the en
 ```bash
 g++ main.cpp -o application.exe
 ```
-
-```bash
-git clone https://github.com/your-username/cpp-text-button.git
-```
